@@ -20,7 +20,12 @@ gem 'jbuilder', '~> 2.7'
 
 gem 'devise'
 
-gem 'shrine', '~> 3.0'
+gem 'bootsnap', '>= 1.4.2', require: false
+gem 'bootstrap-sass', '~> 3.4.1'
+
+gem 'mini_magick'
+
+gem 'carrierwave'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'

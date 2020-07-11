@@ -1,0 +1,11 @@
+<h1>Page#home</h1>
+<p>Find me in app/views/page/home.html.erb</p>
+
+<% if current_user %>
+<p><%= link_to 'Sign out', destroy_user_session_path, method: :delete %> </p>
+<p><%= link_to 'Edit', edit_user_registration_path %> </p>
+<%= image_tag(current_user.avatar_size, class:"ava" ) %>
+<% else %>
+<p><%= link_to 'Create Account', new_user_registration_path %> </p>
+<p><%= link_to 'Sign in', new_user_session_path %> </p>
+<% end %>
