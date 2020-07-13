@@ -14,6 +14,10 @@
         </li>
 
         <li class="nav-item">
+          <%= link_to "Account",account_path(current_user), class: "load" %>
+        </li>
+
+        <li class="nav-item">
           <%= link_to "Load",new_post_path(@post), class: "load" %>
         </li>
 
