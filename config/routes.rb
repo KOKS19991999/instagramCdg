@@ -1,11 +1,15 @@
 Rails.application.routes.draw do
-  resources :posts
+
+devise_for :users
 
   root to: 'page#home'
   get 'post/new'
+  get "users/:username" => "users#show", as: :account
 
 
-  devise_for :users
 
-resource :users, only: [:show]
+  resources :posts do
+    resource :comments
+  end
+
 end

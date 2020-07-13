@@ -1,0 +1,48 @@
+<div class="row justify-content-md-center profile-wrapper">
+<div class="col-md-4 text-center">
+<div class="wrapper">
+<% if current_user.avatar.attached? %>
+<%= image_tag @users.avatar , width:'100px',hight:"50px", class:"ava" %>
+<%end %>
+</div>
+</div>
+<div class="col-md-8">
+<div class="row">
+<p class="username"><%= @users.username %></p>
+<% if @users == current_user %>
+<%= link_to "Edit Profile", edit_user_registration_path, class: "btn btn-outline-dark common-btn edit-profile-btn" %>
+
+<% end %>
+</div>
+<div class="row">
+<p class="email"><%= @users.email %></p>
+</div>
+</div>
+
+<div class="profile-tab">
+<% if @users == current_user %>
+<nav>
+<div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
+<a class="nav-item nav-link active" id="nav-posts-tab" data-toggle="tab" href="#nav-posts" role="tab" aria-controls="nav-posts" aria-selected="true">POSTS</a>
+<a class="nav-item nav-link" id="nav-saved-tab" data-toggle="tab" href="#nav-saved" role="tab" aria-controls="nav-saved" aria-selected="false">SAVED</a>
+</div>
+</nav>
+<% end %>
+<div class="tab-content pb-3" id="nav-tabContent">
+<div class="tab-pane fade show active" id="nav-posts" role="tabpanel" aria-labelledby="nav-posts-tab">
+<div class="row">
+<% @users.posts.each do |post|%>
+<div class="wrapper">
+<%=link_to post_path(post) do %>
+<%=image_tag post.img %>
+<% end %>
+</div>
+<% end %>
+</div>
+</div>
+<div class="tab-pane fade" id="nav-saved" role="tabpanel" aria-labelledby="nav-saved-tab">
+<div class="row"></div>
+</div>
+</div>
+</div>
+</div>

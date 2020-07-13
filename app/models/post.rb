@@ -3,10 +3,12 @@ class Post < ApplicationRecord
   belongs_to :user
 validates :image,presence: true
 
-  def thumbnail
+  def img
   if image.attached?
   return self.image.variant(resize: '600x600!').processed
   end
   end
+
+has_many :comments, dependent: :destroy
 
 end

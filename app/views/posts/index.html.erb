@@ -4,10 +4,12 @@
 <% @posts.each do |post|%>
 <div class="insta-post">
 <div class="post-meta">
-  <%= post.user.username %>
+  <%= link_to post.user.username, account_path(post.user.id) %>
 </div>
-
+<%=link_to post_path(post) do %>
 <%=image_tag post.image, class: "img img-fluid" %>
+<% end %>
+
 </div>
 <% end %>
 </div>
