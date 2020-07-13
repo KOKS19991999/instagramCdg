@@ -14,3 +14,27 @@
  *= require_self
  */
 @import "bootstrap/scss/bootstrap";
+
+body {
+  background: #fafafa !important;
+}
+
+a {
+  color: black;
+}
+
+.load {
+  color: red;
+}
+
+.ava {
+  width: 100px;
+ height: 100px;
+ margin: 8px;
+ border: 1px solid #efefef;
+ border-radius: 50%;
+}
+
+.nav-item {
+  padding-left: 5px;
+}
