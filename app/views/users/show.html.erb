@@ -34,7 +34,7 @@
 <% @users.posts.each do |post|%>
 <div class="wrapper">
 <%=link_to post_path(post) do %>
-<%=image_tag post.img %>
+<%=image_tag post.image, style: "width: 400px; height: 400px;" %>
 <% end %>
 </div>
 <% end %>
