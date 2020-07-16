@@ -38,3 +38,34 @@ a {
 .nav-item {
   padding-left: 5px;
 }
+
+.container_signup {
+  margin-top: 200px;
+}
+
+.or {
+  font-size: 13px!important;
+  color: #999;
+  font-weight: 600;
+}
+
+.or::before {
+  content: '';
+  background: #efefef;
+  display: block;
+  height: 2px;
+  width: 110px;
+  position: relative;
+  top: 11px;
+}
+
+.or::after {
+  content: '';
+  background: #efefef;
+  display: block;
+  height: 2px;
+  width: 110px;
+  position: relative;
+  bottom: 10px;
+  left: 160px;
+}

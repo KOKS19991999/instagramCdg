@@ -23,3 +23,85 @@ a {
 .nav-item {
   padding-left: 5px;
 }
+
+.phone {
+  height: 450px;
+  float: right;
+  margin: 10px;
+}
+
+.right-column {
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  width: 320px;
+  margin: 10px;
+  padding: 20px 40px;
+}
+
+.inst_icon {
+  margin: 15px auto;
+}
+
+.form-group {
+  margin-bottom: 6px!important;
+}
+
+.form-control {
+  background: #fafafa!important;
+  border: 1px solid #efefef!important;
+  font-size: 12px!important;
+}
+
+::placeholder {
+  color: #999!important;
+}
+
+.btn {
+  margin: 12px auto;
+  padding: 2px!important;
+  font-weight: 600!important;
+}
+
+.btn-primary {
+  background-color: #3897f0!important;
+  border: 1px solid #3897f0!important;
+}
+
+.terms {
+  line-height: 18px;
+  font-size: 14px;
+  color: #999;
+  margin: 5px 20px;
+}
+
+.right-column-login {
+background: #fff;
+border: 1px solid #e6e6e6;
+width: 320px;
+margin: 10px;
+}
+
+.right-column-login a:hover {
+  text-decoration: none;
+}
+
+.right-column-login a {
+  color: #00376b;
+}
+
+.forgot_pas {
+  color: #00376b;
+  color: rgba(var(--fe0,0,55,107),1);
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 12px;
+  text-align: center;
+}
+
+.donthave {
+  color: #262626;
+  color: rgba(var(--i1d,38,38,38),1);
+  font-size: 14px;
+  margin: 15px;
+  text-align: center;
+}
